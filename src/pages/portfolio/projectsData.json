@@ -1,64 +1,87 @@
 [
   {
-    "title": "Bike Buddy",
+    "title": "Audiophile",
     "image": "./projectImages/audiophile.png",
-    "description": "I was responsible for the routing functionality of Bike Buddy, an application that helps parents and guardians keep their children safe while cycling. Utilises the Leaflet.js library and TomTom Routing/Reverse Geolocation API's to create an interactive and visually appealing map that allows a user to plot a route, taking into account various factors such as traffic levels, bicycle lanes, and elevation.",
-    "technologies": "Leaflet | jQuery | Bootstrap",
-    "github": "https://github.com/mdyeates/bike-buddy",
-    "deployed": "https://norrinradd8.github.io/bike_buddy/",
-    "bgcolor": "#f37737",
+    "description": "Audiophile is a website designed for online earphones, earbuds and speaker shopping.This website makes shopping more interactive and gives it a sense of moderness and technology.",
+    "technologies": "ReactJS | NodeJS",
+    "github": "https://github.com/Tewogbade/audiophile",
+    "deployed": "https://audiophile-dun-beta.vercel.app/",
+    "bgcolor": "#DBC1AD",
     "id": "1"
   },
   {
-    "title": "Weather",
-    "image": "./projectImages/weather.png",
-    "technologies": "jQuery | HTML | CSS",
-    "description": " This dashboard uses the OpenWeatherMap API to retrieve detailed weather data, including the city name, date, weather icon, temperature, humidity, and wind speed. The dashboard has a 5-day forecast feature and a search history feature that saves past searches for easy access. It also has a dark/light theme that changes the look of the page based on day or night in the searched location and uses the geolocation API to automatically determine the user's current location and display the weather.",
-    "github": "https://github.com/mdyeates/weather-app",
-    "deployed": "https://mdyeates.github.io/weather-app/",
-    "bgcolor": "#29cbe0",
+    "title": "Delicious App",
+    "image": "./projectImages/recipe-app.png",
+    "technologies": "ReactJS | HTML | CSS",
+    "description": "This app uses the Recipe API to provide detailed recipe infomation like instructions and ingredients. It also has filter  option for different cuisines like Italian, American, Thai and Japannese cuisine and also allows random recipe search.",
+    "github": "https://github.com/Tewogbade/recipe-app",
+    "deployed": "https://recipe-app-tewogbade.vercel.app/",
+    "bgcolor": "#928490",
     "id": "2"
   },
   {
-    "title": "Team",
-    "image": "./projectImages/team.png",
-    "technologies": "JS | Node | Bootstrap | OOP | TTD",
-    "description": "Team Dashboard is a Node command-line application that takes in information about employees to generate a dynamic HTML web page.",
-    "github": "https://github.com/mdyeates/team-dashboard",
-    "deployed": "https://drive.google.com/file/d/1_atUXTM-L9r4NccsrPaaWqPyNu37ftwH/view",
-    "bgcolor": "#6c4bf4",
+    "title": "Todo List App",
+    "image": "./projectImages/todo.png",
+    "technologies": "JS | HTML | CSS",
+    "description": "Todo List App is a simple yet amazing looking UI animated JavaScript app that uses local storage to store todo items. Make every hour of your day count with this simple Todo List App. You can keep track of all important appointments during a normal 9-5 work day!",
+    "github": "https://github.com/Tewogbade/todo-list",
+    "deployed": "https://todo-list-tewogbade.vercel.app/",
+    "bgcolor": "#ABDFF1",
     "id": "3"
   },
   {
-    "title": "Quiz",
-    "image": "./projectImages/quiz.png",
-    "technologies": "JS | HTML | CSS",
-    "description": "A quiz app on the fundamentals of JavaScript. There are 5 randomly selected multiple-choice questions and the user will have a time limit of 50 seconds. The remaining time will determine their score at the end. The user will be penalised by 10 seconds for every incorrect answer.",
-    "github": "https://github.com/mdyeates/coding-quiz",
-    "deployed": "https://mdyeates.github.io/coding-quiz/",
-    "bgcolor": "#f85781",
+    "title": "Room",
+    "image": "./projectImages/room.jpg",
+    "technologies": "JS | HTML | CSS | Bootstrap",
+    "description": "Room is a furniture and life style landing page designed with ReactJS. It shows main products with description that allows customer to make quick decision.",
+    "github": "https://github.com/Tewogbade/Room-web",
+    "deployed": "https://room-web.vercel.app/",
+    "bgcolor": "#CAB387",
     "id": "4"
   },
 
   {
-    "title": "P1",
-    "image": "./projectImages/P1.png",
-    "description": "Welcome to P1, your virtual pit stop for the latest updates and standings in the world of F1. But that's not all—we've also got the ultimate card game where driver knowledge is the key to victory.",
-    "technologies": "React | Framer | CSS | Bootstrap | Node",
-    "github": "https://github.com/Jake-W95/P1",
-    "deployed": "https://p1-heroes.netlify.app/",
-    "bgcolor": "#ffcc33",
-    "id": "1"
+    "title": "NASIMS Clone",
+    "image": "./projectImages/nasim.jpg",
+    "description": "This is replica of existing National Social Investment Management System (NASIMS) website design and content. This was achieved using HTML, CSS and Bootstrap",
+    "technologies": "JS | HTML | CSS | Bootstrap",
+    "github": "https://github.com/Tewogbade/Nasims-project",
+    "deployed": "https://nasims-project.vercel.app/",
+    "bgcolor": "#D1AFD3 ",
+    "id": "5"
   },
 
   {
-    "title": "Planner",
-    "image": "./projectImages/planner.png",
-    "technologies": "JS | Bootstrap | Moment",
-    "description": "Make every hour count with this simple Daily Planner App. You can keep track of all important appointments during a normal 9-5 work day!",
-    "github": "https://github.com/mdyeates/daily-planner",
-    "deployed": "https://mdyeates.github.io/daily-planner/",
-    "bgcolor": "#3e67ff",
+    "title": "Countdown Timer",
+    "image": "./projectImages/timer.jpg",
+    "technologies": "JS | HTML | CSS",
+    "description": "Countdown Timer is a javaScript timer and reminder for the important events & dates in your life. You can keep track of all important appointments, events or day",
+    "github": "https://github.com/Tewogbade/Countdown-timer",
+    "deployed": "https://countdown-timer-ebon.vercel.app/",
+    "bgcolor": "#F2EBE0",
     "id": "6"
+  },
+
+  {
+    "title": "Guess My Number",
+    "image": "./projectImages/guess.PNG",
+    "technologies": "JS | HTML | CSS",
+    "description": "Guess My Number is based on the fundamentals of JavaScript. Where you have 10 chances to guess a random number. The remaining chance will determine the score at the end. The user's highest score is saved.",
+    "github": "https://github.com/Tewogbade/Guess-my-number-game",
+    "deployed": "https://guess-my-number-game-eight.vercel.app/",
+    "bgcolor": "#F4ED6E",
+    "id": "7"
+  },
+
+  {
+    "title": "Meet Landing Page",
+    "image": "./projectImages/meet.png",
+    "technologies": "ReactJS | Bootstrap",
+    "description": "Meet is a social app landing page designed with React that can be use for booking meetings with your business partners and friends, as well as save personal notes.",
+    "github": "https://github.com/Tewogbade/Meet-project",
+    "deployed": "https://meet-react-eta.vercel.app/",
+    "bgcolor": "#A0D3F9",
+    "id": "8"
   }
+  
 ]
