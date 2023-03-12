@@ -18,7 +18,7 @@ const Landing = ({ name, tagline }) => {
       bottom: "0",
       opacity: "0.3",
       // mixBlendMode: "lighten",
-      height: "90%",
+      height: "85%",
     },
 
     textContainer: {
@@ -36,7 +36,7 @@ const Landing = ({ name, tagline }) => {
       fontWeight: "700",
       marginTop: "-100px",
       paddingBottom: "28px",
-      fontSize:"58px"
+      // fontSize:"58px"
     },
     
   };
