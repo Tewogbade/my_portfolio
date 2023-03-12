@@ -36,7 +36,7 @@ const Landing = ({ name, tagline }) => {
       fontWeight: "700",
       marginTop: "-100px",
       paddingBottom: "28px",
-      // fontSize:"58px"
+      
     },
     
   };
@@ -69,7 +69,7 @@ const Landing = ({ name, tagline }) => {
         >
           {/* {tagline} */}
     
-         <Typewriter onInit={(typewriter)=>{typewriter.typeString("I'm a Web Developer").pauseFor(1500).deleteAll().typeString("I'm an Architect").pauseFor(1500).deleteAll().typeString("I'm an Open Source Contributor").pauseFor(1500).deleteAll().typeString("I'm a freelancer").pauseFor(1500).deleteAll().typeString("I'm a Web Developer").start();
+         <Typewriter onInit={(typewriter)=>{typewriter.typeString("I'm a Web Developer").pauseFor(1500).deleteAll().typeString("I'm an Architect").pauseFor(1500).deleteAll().typeString("I'm a Designer").pauseFor(1500).deleteAll().typeString("I'm a freelancer").pauseFor(1500).deleteAll().typeString("I'm a Web Developer").start();
 
           }}/>
         </motion.span>
