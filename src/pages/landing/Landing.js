@@ -19,6 +19,7 @@ const Landing = ({ name, tagline }) => {
       opacity: "0.3",
       // mixBlendMode: "lighten",
       height: "85%",
+      
     },
 
     textContainer: {
@@ -34,7 +35,7 @@ const Landing = ({ name, tagline }) => {
     name: {
       color: "tan",
       fontWeight: "700",
-      marginTop: "10px",
+      // marginTop: "30px",
       paddingBottom: "5px",
       
     },
@@ -79,7 +80,7 @@ const Landing = ({ name, tagline }) => {
           className="landingImage"
           ref={ref}
           initial={{ y: "10vw", opacity: 0 }}
-          animate={inView ? { y: 0, opacity: 0.5 } : { y: "10vw", opacity: 0 }}
+          animate={inView ? { y: 0, opacity: 0.3 } : { y: "10vw", opacity: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
           style={styles.landingImage}
           src={landingImage}
