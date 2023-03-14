@@ -34,8 +34,8 @@ const Landing = ({ name, tagline }) => {
     name: {
       color: "tan",
       fontWeight: "700",
-      marginTop: "-100px",
-      paddingBottom: "28px",
+      marginTop: "10px",
+      paddingBottom: "5px",
       
     },
     
