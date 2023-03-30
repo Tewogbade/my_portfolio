@@ -82,6 +82,29 @@
     "deployed": "https://meet-react-eta.vercel.app/",
     "bgcolor": "#A0D3F9",
     "id": "8"
+  },
+
+  {
+    "title": "Ramdom",
+    "image": "./projectImages/guess.PNG",
+    "technologies": "JS | HTML | CSS",
+    "description": "Guess My Number is a fun and interactive game that utilizes the basic principles of JavaScript. The game offers you the opportunity to guess a random number within 10 attempts, and your remaining chances will determine your final score. To enhance the competition, the game also saves the player's highest score.",
+    "github": "https://github.com/Tewogbade/Guess-my-number-game",
+    "deployed": "https://guess-my-number-game-eight.vercel.app/",
+    "bgcolor": "#Ffffff",
+    "id": "9"
+  },
+
+  {
+    "title": "xxxx",
+    "image": "./projectImages/meetpic.PNG",
+    "technologies": "ReactJS | Bootstrap",
+    "description": "Meet is a social app landing page designed with React that can be use for booking meetings with your business partners and friends, as well as save personal notes.",
+    "github": "https://github.com/Tewogbade/Meet-project",
+    "deployed": "https://meet-react-eta.vercel.app/",
+    "bgcolor": "#ff0000",
+    "id": "10"
   }
+  
   
 ]
