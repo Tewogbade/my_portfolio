@@ -53,6 +53,12 @@ const Form = () => {
         }, 3000);
       })
       .catch((err) => console.log(err));
+      
+    // send email to tewogbade3008@gmail.com
+    const url = "mailto:tewogbade3008@gmail.com";
+    const { name, email, subject, message } = formData;
+    const body = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
+    window.open(`${url}?subject=${subject}&body=${body}`);
   };
 
   return (
