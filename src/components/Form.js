@@ -15,7 +15,7 @@ const Form = () => {
     email: "",
     subject: "",
     message: "",
-    access_key: "4f412a8f-0a11-4ba9-8e37-e12661f36602",
+    // access_key: "YOUR_ACCESS_KEY_HERE",
   });
 
   const handleChange = (e) => {
@@ -30,7 +30,7 @@ const Form = () => {
 
     const data = JSON.stringify(formData);
 
-    fetch("https://api.web3forms.com/submit", {
+    fetch("https://api.web3forms.com/submit/tewogbade3008@gmail.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -53,12 +53,6 @@ const Form = () => {
         }, 3000);
       })
       .catch((err) => console.log(err));
-      
-    // send email to tewogbade3008@gmail.com
-    const url = "mailto:tewogbade3008@gmail.com";
-    const { name, email, subject, message } = formData;
-    const body = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
-    window.open(`${url}?subject=${subject}&body=${body}`);
   };
 
   return (
