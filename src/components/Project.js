@@ -43,7 +43,7 @@ const Project = ({ technologies, title, image, color, id, github, deployed, desc
           <span className="viewWork">View Work &#8594;</span>
         </div>
         <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
-          <img src={image} alt="image showing application" />
+          <img src={image} alt="An illustration depicting the application." />
         </div>
       </div>
       <Modal
@@ -70,11 +70,11 @@ const Project = ({ technologies, title, image, color, id, github, deployed, desc
         <img src={closeModal} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
         <h3 className="modalTitle">{title}</h3>
         <p className="projectDescription">{description}</p>
-        <button className="btn" onClick={() => (window.location.href = github)}>
-          GitHub Repo
+        <button className="btn" onClick={() => window.open(github, "_blank")}>
+         GitHub Repo
         </button>
-        <button className="btn" onClick={() => (window.location.href = deployed)}>
-          Live Link
+        <button button className="btn" onClick={() => window.open(deployed, "_blank")}>
+        Live Link
         </button>
       </Modal>
     </motion.div>
