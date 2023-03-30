@@ -75,7 +75,7 @@
 
   {
     "title": "Meet Landing Page",
-"image": "./projectImages/meet.png",
+"image": "./projectImages/meetpage.png",
     "technologies": "ReactJS | Bootstrap",
     "description": "Meet is a social app landing page designed with React that can be use for booking meetings with your business partners and friends, as well as save personal notes.",
     "github": "https://github.com/Tewogbade/Meet-project",
