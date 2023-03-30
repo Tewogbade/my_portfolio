@@ -15,7 +15,7 @@ const Form = () => {
     email: "",
     subject: "",
     message: "",
-    // access_key: "YOUR_ACCESS_KEY_HERE",
+    access_key: "4f412a8f-0a11-4ba9-8e37-e12661f36602",
   });
 
   const handleChange = (e) => {
@@ -30,7 +30,7 @@ const Form = () => {
 
     const data = JSON.stringify(formData);
 
-    fetch("https://api.web3forms.com/submit/tewogbade3008@gmail.com", {
+    fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
