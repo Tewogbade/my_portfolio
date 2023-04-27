@@ -9,7 +9,7 @@ function App() {
     email: "tewogbade3008@gmail.com",
     availability: "Open for work",
     brand:
-      "As a frontend web developer with a background in architecture, I possess a rare blend of skills that enables me to design websites that are both visually attractive and highly functional. My background in architecture has given me a profound appreciation for user-centered design, and I apply this principle to all my web development projects. I have a strong understanding of programming languages and design principles, which I use to create intuitive interfaces that enhance the user experience. Through my work, I aim to create websites that not only look good but also provide practical and meaningful solutions to real-world problems.",
+      "As a full-stack web developer with a background in architecture, I bring a unique set of skills to the table. Combining my expertise in both fields, I have the ability to create websites that seamlessly blend aesthetics and functionality. Drawing from my architectural background, I deeply value user-centered design and incorporate this principle into every aspect of my web development projects. With a solid understanding of programming languages and design principles, I craft intuitive interfaces that elevate the user experience. My ultimate goal is to develop websites that not only showcase appealing visuals but also offer practical and impactful solutions to real-world challenges.",
   };
 
   return (

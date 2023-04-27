@@ -4,6 +4,19 @@ import SocialIcons from "../components/SocialIcons";
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
 import resume from "../pages/about/Tewogbade-Fatai-Resume.pdf";
+import {
+  FaBootstrap,
+  FaHtml5,
+  FaReact,
+  FaGithub,
+  FaGitAlt,
+  FaNodeJs,
+} from "react-icons/fa";
+import { DiCss3} from "react-icons/di";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiRedux, SiExpress, SiMongodb } from "react-icons/si";
+import { TbBrandTypescript } from "react-icons/tb";
+
 
 const AboutMe = ({ name, email, location, availability, brand }) => {
   const [ref, inView] = useInView({
@@ -51,10 +64,153 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
         >
           <div className="contentContainer">
             <h4>Nice to meet you</h4>
-            <h5>Frontend Web Developer who creates amazing digital experiences!</h5>
+            <h5>Full-stack Web Developer who creates exceptional digital experiences!</h5>
             <div className="contentDescription">
               <p>{brand}</p>
             </div>
+
+
+
+            <div className="infoContainer ">
+            
+              
+            <h4>Tech Stack</h4>
+                <div className="skills">
+                  <div className="skillpair">
+                    <span>HTML</span>
+                    <FaHtml5
+                      style={{
+                        width: "60px",
+                        fontSize: "4rem",
+                        color:"tan"
+                      }}
+                    />
+                  </div>
+                  <div className="skillpair">
+                    <span>CSS</span>
+                    <DiCss3
+                      style={{
+                        width: "60px",
+                        fontSize: "4rem",
+                        color:"tan"
+                      }}
+                    />
+                  </div>
+                  <div className="skillpair">
+                    <span>Boostrap </span>
+                    <FaBootstrap
+                      style={{
+                        width: "60px",
+                        fontSize: "4rem",
+                        color:"tan"
+                      }}
+                    />
+                  </div>
+                  <div className="skillpair">
+                    <span>JavaScript </span>
+                    <IoLogoJavascript
+                      style={{
+                        width: "60px",
+                        fontSize: "4rem",
+                        color:"tan"
+                      }}
+                    />
+                  </div>
+
+                  <div className="skillpair">
+                    <span>Git </span>
+                    <FaGitAlt
+                     style={{
+                      width: "60px",
+                      fontSize: "4rem",
+                      color:"tan"
+                    }}
+                    />
+                  </div>
+
+                  
+                  <div className="skillpair">
+                    <span>GitHub</span>
+                    <FaGithub
+                      style={{
+                        width: "60px",
+                        fontSize: "4rem",
+                        color:"tan"
+                      }}
+                    />
+                  </div>
+                  
+                  <div className="skillpair">
+                    <span>React </span>
+                    <FaReact
+                     style={{
+                      width: "60px",
+                      fontSize: "4rem",
+                      color:"tan"
+                    }}
+                    />
+                  </div>
+                  <div className="skillpair">
+                    <span>Redux</span>
+                    <SiRedux
+                      style={{
+                        width: "60px",
+                        fontSize: "4rem",
+                        color:"tan"
+                      }}
+                    />
+                  </div>
+                  <div className="skillpair">
+                    <span>Typescript</span>
+                    <TbBrandTypescript
+                      style={{
+                        width: "60px",
+                        fontSize: "4rem",
+                        color:"tan"
+                      }} 
+                    />
+                  </div>
+                  <div className="skillpair">
+                    <span>Express JS</span>
+                    <SiExpress
+                     style={{
+                      width: "60px",
+                      fontSize: "4rem",
+                      color:"tan"
+                    }}
+                    />
+                  </div>
+                  <div className="skillpair">
+                    <span>Node JS</span>
+                    <FaNodeJs
+                      style={{
+                        width: "60px",
+                        fontSize: "4rem",
+                        color:"tan"
+                      }}
+                    />
+                  </div>
+                  <div className="skillpair">
+                    <span>MongoDB</span>
+                    <SiMongodb
+                      style={{
+                        width: "60px",
+                        fontSize: "4rem",
+                        color:"tan"
+                      }}
+                    />
+                  </div>
+                </div>
+          </div>
+
+
+
+
+
+
+
+
+
             <div className="infoContainer">
               <div className="row">
                 <div className="col-12 col-md-6 info">
