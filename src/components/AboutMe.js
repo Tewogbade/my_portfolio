@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import aboutMeImg from "../images/tee.JPG";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import SocialIcons from "../components/SocialIcons";
+import { useInView } from "react-intersection-observer";
+import { useState, useEffect } from "react";
 import resume from "../pages/about/Tewogbade-Fatai-Resume.pdf";
 import {
   FaBootstrap,
@@ -15,15 +16,13 @@ import { DiCss3 } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiRedux, SiExpress, SiMongodb } from "react-icons/si";
 import { TbBrandTypescript } from "react-icons/tb";
-import aboutMeImg from "../images/tee.JPG";
 
 const AboutMe = ({ name, email, location, availability, brand }) => {
-  const [ref1, inView1] = useInView({
+  const [refImage, inViewImage] = useInView({
     threshold: 0.2,
     triggerOnce: true,
   });
-
-  const [ref2, inView2] = useInView({
+  const [refText, inViewText] = useInView({
     threshold: 0.2,
     triggerOnce: true,
   });
@@ -47,23 +46,29 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
     link.click();
   };
 
+  const style = {
+    width: "60px",
+    fontSize: "4rem",
+    color: "tan",
+  };
+
   return (
     <div className="aboutContainer container">
       <div className="row">
         <motion.div
           className="personalImage col-12 col-lg-4"
-          ref={ref1}
+          ref={refImage}
           initial={{ x: "-10vw", opacity: 0 }}
-          animate={inView1 ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
+          animate={inViewImage ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <img src={aboutMeImg} alt={name} />
         </motion.div>
         <motion.div
           className="personalInfo col-12 col-lg-8"
-          ref={ref2}
+          ref={refText}
           initial={{ x: "10vw", opacity: 0 }}
-          animate={inView2 ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
+          animate={inViewText ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <div className="contentContainer">
@@ -71,60 +76,38 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
             <h5>Full-stack Web Developer who creates exceptional digital experiences!</h5>
             <div className="contentDescription">
               <p>{brand}</p>
+            </div>
 
-
-              <div className="infoContainer ">
-            <h4>Tech Stack</h4>
-                <div className="skills">
-                  <div className="skillpair">
-                    <span>HTML</span>
-                    <FaHtml5
-                      style={{
-                        width: "60px",
-                        fontSize: "4rem",
-                        color:"tan"
-                      }}
-                    />
-                  </div>
+            <div className="infoContainer ">
+              <h4>Tech Stack</h4>
+              <div className="skills">
+                <div className="skillpair">
+                  <span>HTML</span>
+                  <FaHtml5 style={style} />
+                </div>
                   <div className="skillpair">
                     <span>CSS</span>
                     <DiCss3
-                      style={{
-                        width: "60px",
-                        fontSize: "4rem",
-                        color:"tan"
-                      }}
+                      style={style}
                     />
                   </div>
                   <div className="skillpair">
                     <span>Boostrap </span>
                     <FaBootstrap
-                      style={{
-                        width: "60px",
-                        fontSize: "4rem",
-                        color:"tan"
-                      }}
+                      style={style}
                     />
                   </div>
                   <div className="skillpair">
                     <span>JavaScript </span>
                     <IoLogoJavascript
-                      style={{
-                        width: "60px",
-                        fontSize: "4rem",
-                        color:"tan"
-                      }}
+                      style={style}
                     />
                   </div>
 
                   <div className="skillpair">
                     <span>Git </span>
                     <FaGitAlt
-                     style={{
-                      width: "60px",
-                      fontSize: "4rem",
-                      color:"tan"
-                    }}
+                     style={style}
                     />
                   </div>
 
@@ -132,82 +115,48 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
                   <div className="skillpair">
                     <span>GitHub</span>
                     <FaGithub
-                      style={{
-                        width: "60px",
-                        fontSize: "4rem",
-                        color:"tan"
-                      }}
+                      style={style}
                     />
                   </div>
                   
                   <div className="skillpair">
                     <span>React </span>
                     <FaReact
-                     style={{
-                      width: "60px",
-                      fontSize: "4rem",
-                      color:"tan"
-                    }}
+                    style={style}
                     />
                   </div>
                   <div className="skillpair">
                     <span>Redux</span>
                     <SiRedux
-                      style={{
-                        width: "60px",
-                        fontSize: "4rem",
-                        color:"tan"
-                      }}
+                      style={style}
                     />
                   </div>
                   <div className="skillpair">
                     <span>Typescript</span>
                     <TbBrandTypescript
-                      style={{
-                        width: "60px",
-                        fontSize: "4rem",
-                        color:"tan"
-                      }} 
+                      style={style}
                     />
                   </div>
                   <div className="skillpair">
                     <span>Express JS</span>
                     <SiExpress
-                     style={{
-                      width: "60px",
-                      fontSize: "4rem",
-                      color:"tan"
-                    }}
+                   style={style}
                     />
                   </div>
                   <div className="skillpair">
                     <span>Node JS</span>
                     <FaNodeJs
-                      style={{
-                        width: "60px",
-                        fontSize: "4rem",
-                        color:"tan"
-                      }}
+                      style={style}
                     />
                   </div>
                   <div className="skillpair">
                     <span>MongoDB</span>
                     <SiMongodb
-                      style={{
-                        width: "60px",
-                        fontSize: "4rem",
-                        color:"tan"
-                      }}
+                      style={style}
                     />
                   </div>
                 </div>
           </div>
-
-            </div>
-
-
-
-          
 
 
 
