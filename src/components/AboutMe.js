@@ -1,8 +1,7 @@
-import aboutMeImg from "../images/tee.JPG";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import SocialIcons from "../components/SocialIcons";
 import { useInView } from "react-intersection-observer";
-import { useState, useEffect } from "react";
+import SocialIcons from "../components/SocialIcons";
 import resume from "../pages/about/Tewogbade-Fatai-Resume.pdf";
 import {
   FaBootstrap,
@@ -12,14 +11,19 @@ import {
   FaGitAlt,
   FaNodeJs,
 } from "react-icons/fa";
-import { DiCss3} from "react-icons/di";
+import { DiCss3 } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiRedux, SiExpress, SiMongodb } from "react-icons/si";
 import { TbBrandTypescript } from "react-icons/tb";
-
+import aboutMeImg from "../images/tee.JPG";
 
 const AboutMe = ({ name, email, location, availability, brand }) => {
-  const [ref, inView] = useInView({
+  const [ref1, inView1] = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
+  const [ref2, inView2] = useInView({
     threshold: 0.2,
     triggerOnce: true,
   });
@@ -48,18 +52,18 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
       <div className="row">
         <motion.div
           className="personalImage col-12 col-lg-4"
-          ref={ref}
+          ref={ref1}
           initial={{ x: "-10vw", opacity: 0 }}
-          animate={inView ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
+          animate={inView1 ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <img src={aboutMeImg} alt={name} />
         </motion.div>
         <motion.div
           className="personalInfo col-12 col-lg-8"
-          ref={ref}
+          ref={ref2}
           initial={{ x: "10vw", opacity: 0 }}
-          animate={inView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
+          animate={inView2 ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <div className="contentContainer">
@@ -67,13 +71,9 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
             <h5>Full-stack Web Developer who creates exceptional digital experiences!</h5>
             <div className="contentDescription">
               <p>{brand}</p>
-            </div>
 
 
-
-            <div className="infoContainer ">
-            
-              
+              <div className="infoContainer ">
             <h4>Tech Stack</h4>
                 <div className="skills">
                   <div className="skillpair">
@@ -202,6 +202,12 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
                   </div>
                 </div>
           </div>
+
+            </div>
+
+
+
+          
 
 
 
