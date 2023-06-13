@@ -1,5 +1,25 @@
 [
   {
+    "title": "Shop by Tewo",
+    "image": "./projectImages/shopbytewo.png",
+    "description": " This an e-commerce project developed using React, Redux, Stripe payment, MongoDB, and Node.js. This web application offers a seamless shopping experience with features such as product browsing, cart management, and secure payments through Stripe integration. The project leverages React and Redux to create an interactive user interface, while MongoDB ensures efficient data storage and management. Node.js handles the server-side operations, enabling the application to handle concurrent user requests effectively. This app provides a reliable solution for online shopping needs.",
+    "technologies": "ReactJS | Redux | NodeJS | MongoDB",
+    "github": "https://github.com/Tewogbade/ecommerce-app",
+    "deployed": "https://ecommerce-app-sandy.vercel.app/",
+    "bgcolor": "#aac4a3",
+    "id": "1"
+  },
+  {
+    "title": "Delicious App",
+    "image": "./projectImages/recipe-app.png",
+    "technologies": "ReactJS | API | CSS",
+    "description": "The app utilizes the Recipe API to furnish comprehensive recipe information, comprising both ingredients and instructions. Additionally, the app incorporates an array of filter options catering to diverse culinary cultures such as Italian, American, Thai, and Japanese cuisines. The application also offers a random recipe search feature, enhancing user experience by providing a convenient means of discovering new and exciting recipes.",
+    "github": "https://github.com/Tewogbade/recipe-app",
+    "deployed": "https://recipe-app-tewogbade.vercel.app/",
+    "bgcolor": "#928490",
+    "id": "2"
+  },
+  {
     "title": "Audiophile",
     "image": "./projectImages/audiophile.png",
     "description": "Audiophile is created to provide a platform for purchasing earphones, earbuds, and speakers online. Its goal is to enhance the shopping experience by incorporating interactive features and a modern technological touch, By leveraging these cutting-edge technologies, Audiophile website is able to deliver a responsive, feature-rich, and modern shopping experience to its users. The website is designed to be user-friendly and intuitive, with a sleek and contemporary interface that enhances the overall shopping experience..",
@@ -7,17 +27,7 @@
     "github": "https://github.com/Tewogbade/audiophile",
     "deployed": "https://audiophile-dun-beta.vercel.app/",
     "bgcolor": "#DBC1AD",
-    "id": "1"
-  },
-  {
-    "title": "Delicious App",
-    "image": "./projectImages/recipe-app.png",
-    "technologies": "ReactJS | HTML | CSS",
-    "description": "The app utilizes the Recipe API to furnish comprehensive recipe information, comprising both ingredients and instructions. Additionally, the app incorporates an array of filter options catering to diverse culinary cultures such as Italian, American, Thai, and Japanese cuisines. The application also offers a random recipe search feature, enhancing user experience by providing a convenient means of discovering new and exciting recipes.",
-    "github": "https://github.com/Tewogbade/recipe-app",
-    "deployed": "https://recipe-app-tewogbade.vercel.app/",
-    "bgcolor": "#928490",
-    "id": "2"
+    "id": "3"
   },
   {
     "title": "Todo List App",
@@ -27,7 +37,17 @@
     "github": "https://github.com/Tewogbade/todo-list",
     "deployed": "https://todo-list-tewogbade.vercel.app/",
     "bgcolor": "#ABDFF1",
-    "id": "3"
+    "id": "4"
+  },
+  {
+    "title": "Guess My Number",
+    "image": "./projectImages/guess.PNG",
+    "technologies": "JS | HTML | CSS",
+    "description": "Guess My Number is a fun and interactive game that utilizes the basic principles of JavaScript. The game offers you the opportunity to guess a random number within 10 attempts, and your remaining chances will determine your final score. To enhance the competition, the game also saves the player's highest score.",
+    "github": "https://github.com/Tewogbade/Guess-my-number-game",
+    "deployed": "https://guess-my-number-game-eight.vercel.app/",
+    "bgcolor": "#F4ED6E",
+    "id": "5"
   },
   {
     "title": "Room",
@@ -37,7 +57,7 @@
     "github": "https://github.com/Tewogbade/Room-web",
     "deployed": "https://room-web.vercel.app/",
     "bgcolor": "#CAB387",
-    "id": "4"
+    "id": "6"
   },
 
   {
@@ -48,30 +68,10 @@
     "github": "https://github.com/Tewogbade/Nasims-project",
     "deployed": "https://nasims-project.vercel.app/",
     "bgcolor": "#D1AFD3 ",
-    "id": "5"
-  },
-
-  {
-    "title": "Countdown Timer",
-    "image": "./projectImages/timer.jpg",
-    "technologies": "JS | HTML | CSS",
-    "description": "The project aims to develop a JavaScript-based Countdown Timer that serves as a versatile tool for keeping track of significant events and dates in an individual's life. Users will be able to set reminders for important appointments, milestones, and occasions, ensuring they never miss out on any significant day. The timer will provide an intuitive and user-friendly interface, allowing users to keep track of multiple events simultaneously.",
-    "github": "https://github.com/Tewogbade/Countdown-timer",
-    "deployed": "https://countdown-timer-ebon.vercel.app/",
-    "bgcolor": "#F2EBE0",
-    "id": "6"
-  },
-
-  {
-    "title": "Guess My Number",
-    "image": "./projectImages/guess.PNG",
-    "technologies": "JS | HTML | CSS",
-    "description": "Guess My Number is a fun and interactive game that utilizes the basic principles of JavaScript. The game offers you the opportunity to guess a random number within 10 attempts, and your remaining chances will determine your final score. To enhance the competition, the game also saves the player's highest score.",
-    "github": "https://github.com/Tewogbade/Guess-my-number-game",
-    "deployed": "https://guess-my-number-game-eight.vercel.app/",
-    "bgcolor": "#F4ED6E",
     "id": "7"
   },
+
+  
 
   {
     "title": "Meet Landing Page",
@@ -85,3 +85,5 @@
   }
   
 ]
+
+
