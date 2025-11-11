@@ -59,7 +59,9 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
           className="personalImage col-12 col-lg-4"
           ref={refImage}
           initial={{ x: "-10vw", opacity: 0 }}
-          animate={inViewImage ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
+          animate={
+            inViewImage ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }
+          }
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <img src={aboutMeImg} alt={name} />
@@ -68,12 +70,16 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
           className="personalInfo col-12 col-lg-8"
           ref={refText}
           initial={{ x: "10vw", opacity: 0 }}
-          animate={inViewText ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
+          animate={
+            inViewText ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }
+          }
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <div className="contentContainer">
             <h4>Nice to meet you</h4>
-            <h5>Full-stack Web Developer who creates exceptional digital experiences!</h5>
+            <h5>
+              Front end Developer who creates exceptional digital experiences!
+            </h5>
             <div className="contentDescription">
               <p>{brand}</p>
             </div>
@@ -85,92 +91,61 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
                   <span>HTML</span>
                   <FaHtml5 style={style} />
                 </div>
-                  <div className="skillpair">
-                    <span>CSS</span>
-                    <DiCss3
-                      style={style}
-                    />
-                  </div>
-                  <div className="skillpair">
-                    <span>Boostrap </span>
-                    <FaBootstrap
-                      style={style}
-                    />
-                  </div>
-                  <div className="skillpair">
-                    <span>JavaScript </span>
-                    <IoLogoJavascript
-                      style={style}
-                    />
-                  </div>
-
-                  <div className="skillpair">
-                    <span>Git </span>
-                    <FaGitAlt
-                     style={style}
-                    />
-                  </div>
-
-                  
-                  <div className="skillpair">
-                    <span>GitHub</span>
-                    <FaGithub
-                      style={style}
-                    />
-                  </div>
-                  
-                  <div className="skillpair">
-                    <span>React </span>
-                    <FaReact
-                    style={style}
-                    />
-                  </div>
-                  <div className="skillpair">
-                    <span>Redux</span>
-                    <SiRedux
-                      style={style}
-                    />
-                  </div>
-                  <div className="skillpair">
-                    <span>Typescript</span>
-                    <TbBrandTypescript
-                      style={style}
-                    />
-                  </div>
-                  <div className="skillpair">
-                    <span>Express JS</span>
-                    <SiExpress
-                   style={style}
-                    />
-                  </div>
-                  <div className="skillpair">
-                    <span>Node JS</span>
-                    <FaNodeJs
-                      style={style}
-                    />
-                  </div>
-                  <div className="skillpair">
-                    <span>MongoDB</span>
-                    <SiMongodb
-                      style={style}
-                    />
-                  </div>
+                <div className="skillpair">
+                  <span>CSS</span>
+                  <DiCss3 style={style} />
                 </div>
-          </div>
+                <div className="skillpair">
+                  <span>Boostrap </span>
+                  <FaBootstrap style={style} />
+                </div>
+                <div className="skillpair">
+                  <span>JavaScript </span>
+                  <IoLogoJavascript style={style} />
+                </div>
 
+                <div className="skillpair">
+                  <span>Git </span>
+                  <FaGitAlt style={style} />
+                </div>
 
+                <div className="skillpair">
+                  <span>GitHub</span>
+                  <FaGithub style={style} />
+                </div>
 
-
-
-
-
-
+                <div className="skillpair">
+                  <span>React </span>
+                  <FaReact style={style} />
+                </div>
+                <div className="skillpair">
+                  <span>Redux</span>
+                  <SiRedux style={style} />
+                </div>
+                <div className="skillpair">
+                  <span>Typescript</span>
+                  <TbBrandTypescript style={style} />
+                </div>
+                <div className="skillpair">
+                  <span>Express JS</span>
+                  <SiExpress style={style} />
+                </div>
+                <div className="skillpair">
+                  <span>Node JS</span>
+                  <FaNodeJs style={style} />
+                </div>
+                <div className="skillpair">
+                  <span>MongoDB</span>
+                  <SiMongodb style={style} />
+                </div>
+              </div>
+            </div>
 
             <div className="infoContainer">
               <div className="row">
                 <div className="col-12 col-md-6 info">
                   <span>Name:</span>
-                  <p>Tewogbade Fatai</p>
+                  <p>Tewogbade Tella</p>
                 </div>
                 <div className="col-12 col-md-6 info">
                   <span>Email:</span>
@@ -191,7 +166,11 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
               </div>
             </div>
             <div className="buttonContainer">
-              <button className="btn downloadCV" onClick={handleDownload} disabled={downloading}>
+              <button
+                className="btn downloadCV"
+                onClick={handleDownload}
+                disabled={downloading}
+              >
                 {downloading ? "Downloading..." : "Download Resume"}
               </button>{" "}
               <SocialIcons />
