@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import landingImage from "../../images/tewo11.png";
 import SocialIcons from "../../components/SocialIcons";
-import Typewriter from "typewriter-effect"
+import Typewriter from "typewriter-effect";
 
 const Landing = ({ name, tagline }) => {
   const styles = {
@@ -19,7 +19,6 @@ const Landing = ({ name, tagline }) => {
       opacity: "0.3",
       // mixBlendMode: "lighten",
       height: "85%",
-      
     },
 
     textContainer: {
@@ -37,9 +36,7 @@ const Landing = ({ name, tagline }) => {
       fontWeight: "700",
       // marginTop: "30px",
       paddingBottom: "5px",
-      
     },
-    
   };
 
   const [ref, inView] = useInView({
@@ -66,13 +63,28 @@ const Landing = ({ name, tagline }) => {
           initial={{ y: "10vw", opacity: 0 }}
           animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          
         >
           {/* {tagline} */}
-    
-         <Typewriter onInit={(typewriter)=>{typewriter.typeString("I'm a Web Developer").pauseFor(1500).deleteAll().typeString("I'm an Architect").pauseFor(1500).deleteAll().typeString("I'm a Designer").pauseFor(1500).deleteAll().typeString("I'm a freelancer").pauseFor(1500).deleteAll().typeString("I'm a Web Developer").start();
 
-          }}/>
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("I'm an Architect")
+                .pauseFor(1500)
+                .deleteAll()
+                .typeString("I'm a Web Developer")
+                .pauseFor(1500)
+                .deleteAll()
+                .typeString("I'm a Designer")
+                .pauseFor(1500)
+                .deleteAll()
+                .typeString("I'm a freelancer")
+                .pauseFor(1500)
+                .deleteAll()
+                .typeString("I'm an Architect")
+                .start();
+            }}
+          />
         </motion.span>
       </div>
       <div className="image-container">
